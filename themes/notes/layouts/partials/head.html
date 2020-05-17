@@ -3,6 +3,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>VSCode Notes</title>
-  <link rel="stylesheet" href="css/lit.css" />
-  <link rel="stylesheet" href="css/main.css" />
+  {{ $frameworkCSS := resources.Get "css/lit.css" }}
+  {{ $customCSS := resources.Get "css/main.css"}}
+  {{ $bundledCSS := slice $frameworkCSS $customCSS | resources.Concat "css/bundle.css" | minify }}
+  <link rel="stylesheet" href="{{ $bundledCSS.Permalink }}" />
 </head>
