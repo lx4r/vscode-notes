@@ -1,0 +1,33 @@
+html,
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+}
+:root {
+  --font: "Helvetica Neue", arial, sans-serif;
+}
+
+/* wrapper used to position the footer within */
+/* assumes that it has two children, the second of which is the footer */
+.content-wrapper {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  grid-template-columns: 100%;
+}
+
+footer {
+  text-align: center;
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+}
+
+.key {
+  border: 1px solid black;
+  padding: 2.5px;
+  border-radius: 4px;
+}
