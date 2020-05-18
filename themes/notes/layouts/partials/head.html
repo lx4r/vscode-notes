@@ -6,5 +6,5 @@
   {{ $frameworkCSS := resources.Get "css/lit.css" }}
   {{ $customCSS := resources.Get "css/main.css"}}
   {{ $bundledCSS := slice $frameworkCSS $customCSS | resources.Concat "css/bundle.css" | minify }}
-  <link rel="stylesheet" href="{{ $bundledCSS.RelPermalink }}" />
+  <link rel="stylesheet" href="{{ $bundledCSS.Permalink }}" />
 </head>
