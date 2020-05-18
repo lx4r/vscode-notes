@@ -1,6 +1,6 @@
 baseURL = "https://lx4r.github.io/vscode-notes/"
 languageCode = "en-us"
-title = "VSCode Notes"
+title = "VS Code Notes"
 theme = "notes"
 [params]
   githubURL = "https://github.com/lx4r/vscode-notes"
