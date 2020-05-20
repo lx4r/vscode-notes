@@ -15,7 +15,7 @@
           {{ range $keyCombinationIndex, $keyCombination := $keyCombinations }}
             {{ $numSingleKeys := len $keyCombination}}
             {{ range $keyIndex, $key := $keyCombination }}
-              <code class="key">{{ $key }}</code>{{ if not (eq (add $keyIndex 1) $numSingleKeys)}}+{{end}}
+              <kbd>{{ $key }}</kbd>{{ if not (eq (add $keyIndex 1) $numSingleKeys)}}+{{end}}
             {{ end }}
             {{ if not (eq (add $keyCombinationIndex 1) $numKeyCombinations)}}🡒{{end}}
           {{ end }}

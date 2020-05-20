@@ -33,8 +33,15 @@ h1 {
   text-align: center;
 }
 
-.key {
-  border: 1px solid black;
-  padding: 2.5px;
-  border-radius: 4px;
-}
+kbd {
+  background-color: #eee;
+  border-radius: 3px;
+  border: 1px solid #b4b4b4;
+  color: #333;
+  display: inline-block;
+  /* font-size: .85em; */
+  font-weight: 700;
+  line-height: 1;
+  padding: 2px 4px;
+  white-space: nowrap;
+ }

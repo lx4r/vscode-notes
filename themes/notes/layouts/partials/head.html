@@ -3,7 +3,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>{{.Title}}</title>
-  {{ $frameworkCSS := resources.Get "css/lit.css" }}
+  {{ $frameworkCSS := resources.Get "css/lit.min.css" }}
   {{ $customCSS := resources.Get "css/main.css"}}
   {{ $bundledCSS := slice $frameworkCSS $customCSS | resources.Concat "css/bundle.css" | minify }}
   <link rel="stylesheet" href="{{ $bundledCSS.Permalink }}" />
