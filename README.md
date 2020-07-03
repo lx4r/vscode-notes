@@ -12,7 +12,7 @@
 
 ## Contributing
 
-Contributions, issues and pull requests are welcome! Feel free to add your own awesome VS Code tips.
+Contributions are welcome! Feel free to add your own awesome VS Code tips by opening an issue or creating a pull request.
 
 ## Powered By
 
