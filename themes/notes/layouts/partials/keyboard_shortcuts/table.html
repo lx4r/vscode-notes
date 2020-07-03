@@ -17,7 +17,7 @@
             {{ range $keyIndex, $key := $keyCombination }}
               <kbd>{{ $key }}</kbd>{{ if not (eq (add $keyIndex 1) $numSingleKeys)}}+{{end}}
             {{ end }}
-            {{ if not (eq (add $keyCombinationIndex 1) $numKeyCombinations)}}🡒{{end}}
+            {{ if not (eq (add $keyCombinationIndex 1) $numKeyCombinations)}} → {{end}}
           {{ end }}
           {{ if .Params.isCustom }}🦄{{ end }} 
           {{ if .Params.noDefault }}🔧{{ end }}
