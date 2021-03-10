@@ -9,6 +9,7 @@
 
 - Serve the site locally: `hugo server`
 - Build the site: `hugo`
+- Add a new keybinding: `hugo new keyboard_shortcuts/<file name>.md`
 
 ## Contributing
 
